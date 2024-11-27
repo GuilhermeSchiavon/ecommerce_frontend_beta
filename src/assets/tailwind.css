@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+.__sides {
+    @apply max-w-[1700px] mx-auto px-4 lg:px-20 w-full;
+}
+
+.input-style {
+    @apply block w-full transition px-4 py-3 mt-2 text-sm focus:border-gray-500 text-gray-700 placeholder-gray-500 bg-white border rounded-sm focus:outline-none;
+}
+
+.input-error-style {
+    @apply border-red-600 placeholder-red-300 text-red-500;
+}
+
+pre {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+    font-size: 0.75em; /* 2 */
+    text-align: left;
+    height: 150px;
+    overflow: auto;
+}  
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.labelStyle {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: rgb(55 65 81);
+}
+.inputStyle {
+  margin-top: 0.25rem;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  border-width: 1px;
+  width: 100%;
+  border-color: rgb(229 231 235);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(55 65 81);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.inputStyle:disabled{
+  background-color: rgb(229, 231, 235);
+}
